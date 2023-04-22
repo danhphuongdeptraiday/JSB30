@@ -69,13 +69,20 @@
 
       .model {
         width: 400px;
-        border: 1px solid red;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
         margin-bottom: 50px;
         margin-left: 50px;
         padding: 25px;
+        position: fixed;
+        bottom: 70px;
+        right: 100px;
+        background-color: white;
       }
 
       .model .text_container {
+        margin-top: 25px;
         margin-bottom: 80px;
       }
 
@@ -96,9 +103,52 @@
         margin-bottom: 20px;
       }
 
+      .model button:hover {
+        cursor: pointer;
+        background-color: rgb(52, 104, 186);
+      }
+
+      .logo img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+      }
+
       .provide_mess {
         text-align: center;
         font-weight: bold;
+      }
+
+      .header_model {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .icon_container {
+        width: 80px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .icon_container .icon {
+        display: inline-block;
+        text-align: center;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background-color: rgb(160, 158, 158);
+        line-height: 1.3;
+        font-size: 20px;
+      }
+
+      .icon_container .icon:hover {
+        background-color: rgb(128, 126, 126);
+        cursor: pointer;
       }
     </style>
   </head>
@@ -341,6 +391,10 @@
             src="https://scontent.xx.fbcdn.net/v/t39.30808-1/295024167_4122326987907987_3215292870388820709_n.jpg?stp=cp0_dst-jpg_p74x74&_nc_cat=1&ccb=1-7&_nc_sid=05dcb7&_nc_ohc=fl_JOHhjo8wAX_Exg4N&_nc_ht=scontent.xx&edm=AIfH0VAEAAAA&oh=00_AfC36VYHgXd3eXVte-Nblhbi8f7RpW0_7BK5S5hwhefErw&oe=64403C61"
             alt=""
           />
+        </div>
+        <div class="icon_container">
+          <i class="fa-solid fa-ellipsis icon"></i>
+          <span class="single_line icon">-</span>
         </div>
       </div>
 

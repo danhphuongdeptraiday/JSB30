@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+/* Navigation */
+.navigation {
+  width: 100%;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+.item_container {
+  display: flex;
+}
+
+.item_container .item {
+  padding: 20px 30px;
+  font-weight: bold;
+}
+
+.item_container .item:hover {
+  background-color: gainsboro;
+  color: black;
+  cursor: grabbing;
+}
+
+.more {
+  padding: 0px !important;
+}
+
+.more_title {
+  padding: 20px 30px;
+}
+
+.lists {
+  position: absolute;
+  top: 60px;
+  z-index: 10;
+  background-color: whitesmoke;
+  display: none;
+}
+
+.lists li {
+  padding: 10px 20px;
+  list-style: none;
+}
+
+.lists li:hover {
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+.more_title:hover ~ .lists {
+  display: block;
+}
+
+.search {
+  padding: 20px;
+}
+
+.search:hover {
+  background-color: rgb(212, 79, 79);
+}
+
+/* slide container */
+.slide_container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.w3schools.com/w3images/ny.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  color: gainsboro;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.introduce h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* about the band */
+.about_the_band {
+  width: 60%;
+  margin: 80px auto 50px;
+}
+
+.about_the_band h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about_the_band i {
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.about_the_band .description {
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 600;
+}
+
+/* name container */
+.name_container {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.name_container .name_cart {
+  width: 25%;
+}
+
+.name_container .name_cart h3 {
+  text-align: center;
+}
+
+.name_container .name_cart img {
+  width: 100%;
+  border-radius: 5px;
+}
