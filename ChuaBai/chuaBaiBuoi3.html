@@ -31,8 +31,15 @@
         justify-content: space-between;
         padding: 15px 30px;
         position: fixed;
-        top: 0;
+        top: 0px;
       }
+
+      /* .navigation_container:hover {
+        transition-property: top;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        top: 0;
+      } */
 
       .brand_name {
         margin-left: 50px;
@@ -156,7 +163,10 @@
     <div class="navigation_container">
       <h1 class="brand_name">Brand</h1>
       <div class="items_container">
-        <div class="item1 item">Home</div>
+        <div class="item1 item">
+          <a href="./index.html">Home</a>
+        </div>
+
         <div class="item2 item">About</div>
         <div class="item3 item">Services</div>
         <div class="item4 item">Gallery</div>
